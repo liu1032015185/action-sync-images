@@ -33,13 +33,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.33.0 docker://jiangmaoxi/controller:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.33.0 docker://jiangmaoxi/webhook:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/kubeconfigwriter:v0.33.0 docker://jiangmaoxi/kubeconfigwriter:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.33.0 docker://jiangmaoxi/git-init:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.33.0 docker://jiangmaoxi/entrypoint:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.33.0 docker://jiangmaoxi/nop:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.33.0 docker://jiangmaoxi/imagedigestexporter:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init:v0.33.0 docker://jiangmaoxi/pullrequest-init:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.33.0 docker://jiangmaoxi/workingdirinit:v0.33.0
- 
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/controller:v0.15.0 docker://controller:v0.15.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/webhook:v0.15.0 docker://webhook:v0.15.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/interceptors:v0.15.0 docker://interceptors:v0.15.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/eventlistenersink:v0.15.0 docker://eventlistenersink:v0.15.0
