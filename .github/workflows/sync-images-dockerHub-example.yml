@@ -33,14 +33,13 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.33.0 docker://jiangmaoxi/tekton/controller:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.33.0 docker://jiangmaoxi/tekton/webhook:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/kubeconfigwriter:v0.33.0 docker://jiangmaoxi/tekton/kubeconfigwriter:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.33.0 docker://jiangmaoxi/tekton/git-init:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.33.0 docker://jiangmaoxi/tekton/entrypoint:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.33.0 docker://jiangmaoxi/tekton/nop:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.33.0 docker://jiangmaoxi/tekton/imagedigestexporter:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init:v0.33.0 docker://jiangmaoxi/tekton/pullrequest-init:v0.33.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.33.0 docker://jiangmaoxi/tekton/workingdirinit:v0.33.0
-
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.33.0 docker://jiangmaoxi/controller:v0.33.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.33.0 docker://jiangmaoxi/webhook:v0.33.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/kubeconfigwriter:v0.33.0 docker://jiangmaoxi/kubeconfigwriter:v0.33.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.33.0 docker://jiangmaoxi/git-init:v0.33.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.33.0 docker://jiangmaoxi/entrypoint:v0.33.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.33.0 docker://jiangmaoxi/nop:v0.33.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.33.0 docker://jiangmaoxi/imagedigestexporter:v0.33.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init:v0.33.0 docker://jiangmaoxi/pullrequest-init:v0.33.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.33.0 docker://jiangmaoxi/workingdirinit:v0.33.0
  
