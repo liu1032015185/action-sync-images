@@ -33,4 +33,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard:v0.35.1 docker://jiangmaoxi/dashboard:v0.35.1
+        skopeo copy --all docker://gcr.io/google.com/cloudsdktool/cloud-sdk docker://jiangmaoxi/cloud-sdk
+        skopeo copy --all docker://gcr.io/distroless/base docker://jiangmaoxi/base
+        
